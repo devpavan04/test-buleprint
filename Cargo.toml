@@ -1,0 +1,8 @@
+[workspace]
+members = ["number-squarer-bin", "number-squarer-lib"]
+resolver = "2"
+
+[workspace.dependencies]
+blueprint-sdk = { version = "0.1", features = ["tangle", "macros", "testing"] }
+tokio = { version = "1.0", features = ["full"] }
+thiserror = "1.0"

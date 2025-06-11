@@ -1,0 +1,13 @@
+[package]
+name = "number-squarer-bin"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "number-squarer"
+path = "src/main.rs"
+
+[dependencies]
+number-squarer-lib = { path = "../number-squarer-lib" }
+blueprint-sdk = { workspace = true }
+tokio = { workspace = true }
